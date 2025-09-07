@@ -1,4 +1,4 @@
-import ClientSignupForm from "./clientadd/page";
+import ClientSignupForm from "./pages/clientadd/page";
 
 export default function Home() {
   return (

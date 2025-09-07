@@ -51,17 +51,16 @@ export default function ClientSignupForm() {
 
         {message && (
           <div
-            className={`p-3 mb-4 rounded-md text-sm ${
-              message.type === "success"
-                ? "bg-green-50 text-green-700"
-                : "bg-red-50 text-red-700"
-            }`}
+            className={`p-3 mb-4 rounded-md text-sm ${message.type === "success"
+              ? "bg-green-50 text-green-700"
+              : "bg-red-50 text-red-700"
+              }`}
           >
             {message.text}
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className= "space-y-4">
           <input
             name="username"
             value={form.username}

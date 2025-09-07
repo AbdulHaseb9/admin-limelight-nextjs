@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
-import { connectionDB } from "../../../../libs/Db_connection";
-import Client from "../../../../libs/ClientModel";
+import { connectionDB } from "../../../../lib/Db_connection";
+import Client from "../../../../lib/ClientModel";
+import bcrypt from "bcryptjs";
 
 export async function DELETE(req, { params }) {
   try {
@@ -37,8 +38,6 @@ export async function DELETE(req, { params }) {
   }
 }
 
-
-import bcrypt from "bcryptjs";
 
 export async function PUT(req, { params }) {
   try {
