@@ -1,9 +1,9 @@
-import ClientSignupForm from "./pages/clientadd/page";
+import { Login } from "./components/Login";
 
 export default function Home() {
   return (
     <main>
-     <ClientSignupForm/>
+      <Login />
     </main>
   );
 }
